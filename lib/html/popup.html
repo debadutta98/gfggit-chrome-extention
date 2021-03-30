@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+  <link rel="stylesheet" href="/lib/css/popup.css">
+  <script src="/lib/js/jquery-3.6.0.min.js"  type="text/javascript"></script>
+  <link rel="stylesheet" href="/lib/css/bootstrap.min.css">
+</head>
+<body class="container">
+  <div class="main-box">
+  <img src="/lib/img/up.svg" style="float:right;margin-top:10px;" width="20px" height="20px" id="slide">
+<div id="panel">
+<div class="input-group">
+  <input type="password" class="form-control" aria-label="Username" aria-describedby="basic-addon1" id="token" placeholder="Enter The token"/>
+  <div class="input-group-append">
+<button id="save" class="btn btn-primary mt-4"><img src="/lib/img/save.svg" width="20px" height="20px"></button>
+</div>
+</div>
+
+<button id="key" class="btn btn-primary mt-4" style="margin-left:30px;"><img src="/lib/img/key.svg" width="20px" height="20px">&nbsp;Generate Key</button>
+
+</div>
+<div class="create-repo">
+  <select class="selectpicker"
+   aria-label="Default select example"
+          data-style="btn-success" style="width:150px;top:15px;">
+          <option selected id="default">---Select Repo---</option>
+      </select>
+      &nbsp;
+<a href="#" style="text-decoration:none;cursor:not-allowed;" class="github-link" target="_blank"><img id="git" src="/lib/img/github.svg" width="20px" height="20px"></a>
+</div>
+<div class="upload" style="display:none;">
+  <div>
+    <img src="/lib/img/avatarimage.gif" class="avatar">
+    <div style="display:inline;position:relative;margin-left:-70px;top:30px;">
+      <span style="font-size:9px;"><i id="user-name"><b>Debadutta panda</b></i></span>
+      <img src="/lib/img/verify.png" width="10px" height="10px" alt="verified_user">
+    </div>
+  </div>
+  <div style="position:relative;margin-left:-105px;top:70px;">
+    <span style="font-size:10px;"><i>Total Repo:&nbsp;<b id="repo-number">100</b></i>&nbsp;&nbsp;&nbsp;&nbsp;<i>Followers:&nbsp;<b id="user-follower">12</b></i></span>
+  </div>
+</div>
+</div>
+<div class="second-box">
+  <img src="/lib/img/logo.gif" width="200px" height="200px">
+  </div>
+<script  src="/lib/js/popup.js"></script>
+</body>
+</html>

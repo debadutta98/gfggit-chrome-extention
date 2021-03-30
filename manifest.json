@@ -1,0 +1,32 @@
+{
+  "manifest_version":2,
+  "name":"gfggit",
+  "version":"1.0",
+  "description":"This is a chrome extention which help programer to upload their answer from geeksforgeeks to github",
+  "icons":{
+    "16": "lib/img/icon16.jpg",
+    "48": "lib/img/icon48.jpg",
+    "128": "lib/img/icon128.jpg"
+  },
+  "page_action":{
+  "default_icon":"lib/img/icon16.jpg",
+  "default_title": "gfggit",
+  "default_popup": "lib/html/popup.html"
+},
+"background": {
+  "scripts": ["lib/js/background.js"],
+  "persistent": false
+},
+"permissions":["tabs","https://practice.geeksforgeeks.org/*","storage","declarativeContent","notifications"],
+"content_scripts": [
+  {
+  "run_at": "document_start",
+  "matches": ["https://practice.geeksforgeeks.org/*"],
+  "js": [
+  "lib/js/jquery-3.6.0.min.js","lib/js/content.js"
+],
+  "css":["lib/css/bootstrap.min.css"]
+}
+],
+  "options_page":"lib/html/options.html"
+}

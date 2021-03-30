@@ -1,0 +1,47 @@
+*{
+  margin:0;
+  padding:0;
+}
+body
+{
+  min-height:250px;
+  min-width:250px;
+}
+.form-control
+{
+position:relative;
+margin-top:25px;
+}
+
+.main-box
+{
+  display:none;
+}
+.second-box
+{
+  display:flex;
+  justify-content:center !important;
+  vertical-align:middle;
+}
+.create-repo
+{
+  position:absolute;
+  margin-top:55px;
+  display:inline;
+margin-left:20px;
+}
+.upload
+{
+  position:absolute;
+  display:flex;
+  justify-content:center !important;
+  vertical-align:middle;
+  margin-top:90px;
+  margin-left:70px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
