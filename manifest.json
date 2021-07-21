@@ -1,8 +1,8 @@
 {
   "manifest_version":2,
   "name":"gfggit",
-  "version":"1.0",
-  "description":"This is a chrome extention which help programer to upload their answer from geeksforgeeks to github",
+  "version":"1.0.1",
+  "description":"This is a  extention which help programer to upload their answer from geeksforgeeks to github",
   "icons":{
     "16": "lib/img/icon16.jpg",
     "48": "lib/img/icon48.jpg",
@@ -25,7 +25,7 @@
   "js": [
   "lib/js/jquery-3.6.0.min.js","lib/js/content.js"
 ],
-  "css":["lib/css/bootstrap.min.css"]
+  "css":["lib/css/bootstrap.min.css","lib/css/content.css"]
 }
 ],
   "options_page":"lib/html/options.html"
